@@ -1,0 +1,416 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+@layer utilities {
+  .h1 {
+    @apply text-2xl sm:text-4xl font-bold my-8 sm:my-16 text-center;
+  }
+  .h2 {
+    @apply text-xl sm:text-3xl font-bold my-4 sm:my-8 text-center;
+  }
+  .h3 {
+    @apply text-lg sm:text-2xl font-bold my-3 sm:my-6 text-center;
+  }
+  .h4 {
+  }
+  .h5 {
+  }
+  .outer {
+    @apply sm:w-11/12 sm:pl-7 mx-auto mt-8 flex flex-wrap justify-center;
+  }
+  .flexJustifyCenter {
+    @apply flex justify-center;
+  }
+  .loaderSmallItemNotExist {
+    @apply mb-56;
+  }
+  .loaderSmallGettingItems {
+    @apply text-center my-10 mb-56;
+  }
+  .itemOuter {
+    @apply w-72 xs:w-80 mb-16 sm:mr-7;
+  }
+  .itemTitleA {
+    @apply text-xl font-bold mb-4 leading-normal h-20 relative text-center;
+  }
+  .itemTitleB {
+    @apply flex justify-center;
+  }
+  .itemTitleIcon {
+    @apply text-blue-500 text-3xl mr-2;
+  }
+  .itemImage {
+    @apply mb-5;
+  }
+  .itemLike {
+    @apply mb-3;
+  }
+  .itemDescription {
+    @apply mb-5 overflow-x-scroll;
+  }
+  .itemReadMore {
+    @apply flex justify-between w-64 my-7;
+  }
+  .itemTrash {
+    @apply bg-transparent text-4xl text-gray-500 font-bold pt-5 px-4 rounded;
+  }
+
+  .buttonBlue {
+    @apply bg-blue-500 hover:bg-blue-400 text-white w-20 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+
+  .buttonBlueMiddle {
+    @apply bg-blue-500 hover:bg-blue-400 text-white w-20 xs:w-28 p-2  rounded focus:outline-none cursor-pointer text-base;
+  }
+
+  .buttonBlueMiddleSecond {
+    @apply bg-blue-500 hover:bg-blue-400 text-white w-28 xs:w-32  p-4 rounded focus:outline-none cursor-pointer text-base xs:text-lg;
+  }
+
+  .buttonBlueBigger {
+    @apply bg-blue-500 hover:bg-blue-400 text-white w-32 xs:w-40 py-2 xs:py-5 px-2 rounded focus:outline-none cursor-pointer text-xl xs:text-2xl;
+  }
+
+  .buttonGreen {
+    @apply bg-green-500 hover:bg-green-400 text-white w-20 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+
+  .buttonGreenMiddle {
+    @apply bg-green-500 hover:bg-green-400 text-white w-20 xs:w-28 p-2 rounded focus:outline-none cursor-pointer text-base;
+  }
+
+  .buttonGreenMiddleSecond {
+    @apply bg-green-500 hover:bg-green-400 text-white w-32 xs:w-36  py-4 px-4  rounded focus:outline-none cursor-pointer text-base xs:text-lg;
+  }
+
+  .buttonGreenBigger {
+    @apply bg-green-500 hover:bg-green-400 text-white py-5 px-14 rounded focus:outline-none cursor-pointer text-base xs:text-lg font-bold;
+  }
+
+  .buttonRed {
+    @apply bg-red-500 hover:bg-red-400 text-white py-2 px-4 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+  .buttonRedMiddle {
+    @apply bg-red-500 hover:bg-red-400 text-white w-20 xs:w-28 p-2  rounded focus:outline-none cursor-pointer text-base;
+  }
+  .buttonRedMiddleSecond {
+    @apply bg-red-500 hover:bg-red-400 text-white w-28 xs:w-32 py-4 px-4  rounded focus:outline-none cursor-pointer text-base xs:text-lg;
+  }
+  .buttonGraySmaller {
+    @apply bg-gray-500 hover:bg-gray-400 text-white w-16 sm:w-20 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+  .buttonGray {
+    @apply bg-gray-500 hover:bg-gray-400 text-white w-28 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+  .buttonIndigoSmaller {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white w-16 sm:w-20 p-2 rounded focus:outline-none cursor-pointer text-sm sm:text-base;
+  }
+  .buttonIndigoSmall {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white w-14 sm:w-20 p-2 rounded focus:outline-none cursor-pointer text-base;
+  }
+  .buttonIndigo {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white w-20 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+  .buttonIndigoMiddle {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white w-20 xs:w-28 p-2 rounded focus:outline-none cursor-pointer text-base;
+  }
+  .buttonIndigoMiddleSecond {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white w-32 xs:w-32 py-4 px-4  rounded focus:outline-none cursor-pointer text-base xs:text-lg;
+  }
+  .buttonIndigoBigger {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white py-5 px-16 rounded focus:outline-none cursor-pointer text-sm sm:text-lg;
+  }
+  .buttonIndigoBiggerBgWhite {
+    @apply w-full border-indigo-500 border-2 text-indigo-500 py-5 rounded focus:outline-none cursor-pointer  text-base xs:text-lg;
+  }
+  .buttonPurpleSmall {
+    @apply bg-purple-500 hover:bg-purple-400 text-white w-14 sm:w-20 p-2 rounded focus:outline-none cursor-pointer text-base;
+  }
+  .buttonPurple {
+    @apply bg-purple-500 hover:bg-purple-400 text-white w-20 p-2 rounded focus:outline-none cursor-pointer text-sm xs:text-base;
+  }
+
+  .likeNumber {
+    @apply text-base sm:text-lg;
+  }
+
+  .likeBtn {
+    @apply text-blue-400 text-3xl sm:text-4xl;
+  }
+  .detailsOuter {
+    @apply mt-8 w-full leading-loose tracking-widest text-base md:text-xl;
+  }
+  .detailsInner {
+    @apply w-full mb-16;
+  }
+  .detailsTitle {
+    @apply w-10/12 mx-auto h1 mb-4 leading-normal h-auto font-semibold relative text-center;
+  }
+  .detailsInnerTwo {
+    @apply w-full mx-auto px-8 lg:px-48 py-4 md:py-10;
+  }
+  .detailsLike {
+    @apply w-16 ml-8 mb-3 mt-3;
+  }
+  .detailsCategory {
+    @apply mb-5 w-full md:w-2/3 text-sm sm:text-lg font-semibold;
+  }
+  .detailsDescription {
+    @apply mt-4 mb-8 sm:mt-8 sm:mb-16 leading-7 md:leading-10;
+  }
+  .detailsLoaderSmall {
+    @apply mt-24 mb-56;
+  }
+  .stepInner {
+    @apply w-10/12 mx-auto text-blue-500 font-bold my-3 sm:my-6 text-center leading-relaxed;
+  }
+  .stepIndex {
+    @apply text-gray-700 w-40 mx-auto mb-3 text-lg sm:text-2xl;
+  }
+  .stepTitleIndex {
+    @apply text-purple-500 border border-purple-500 bg-white rounded py-2 w-52 sm:w-60 mx-auto text-base sm:text-lg px-2;
+  }
+  .indexH2 {
+    @apply h2 text-gray-700;
+  }
+  .indexTechnologiesCategory {
+    @apply text-gray-700 font-bold;
+  }
+  .indexSignupForBookmark {
+    @apply text-blue-500 hover:text-blue-400 font-bold hover:underline;
+  }
+  .indexH4 {
+    @apply leading-relaxed w-72 sm:w-8/12 my-3 sm:my-6 mx-auto indent2;
+  }
+  .navbarItem {
+    @apply mr-0 py-2 sm:mr-8 sm:py-3;
+  }
+  .SNSItem {
+    @apply text-purple-500 text-5xl sm:text-6xl;
+  }
+
+  * {
+    list-style: none;
+  }
+
+  button:focus {
+    outline: none;
+    outline: none -webkit-focus-ring-color !important;
+  }
+
+  .error {
+    color: #ff0099;
+    margin: 10px 2px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .inputField {
+    @apply border border-gray-500 rounded text-sm sm:text-base w-11/12 p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent;
+  }
+  .backOptions {
+    @apply mt-12;
+  }
+  .authOuter {
+    @apply mb-56;
+  }
+  .authInner {
+    @apply w-80 sm:w-96 mx-auto my-10 sm:pt-16 sm:pb-24 sm:px-3 sm:shadow-lg sm:rounded-lg text-center;
+  }
+  .hoverBlueBack {
+    @apply hover:border-indigo-400 hover:text-white hover:bg-indigo-400;
+  }
+  .privacyParagraph {
+    @apply mb-5 sm:mb-8 leading-relaxed;
+  }
+  .privacyH2 {
+    @apply md:text-xl leading-relaxed py-6;
+  }
+  .privacyOuter {
+    @apply w-10/12 md:w-8/12 max-w-4xl mx-auto mt-5 mb-28 sm:mb-40;
+  }
+  .privacyH3SubTitle {
+    @apply text-lg sm:text-2xl font-bold mt-4 sm:mt-8 mb-3 sm:mb-5 text-left;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 1;
+    outline: none;
+  }
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #ccc; */
+    /* background-color: rgba(99, 102, 241); */
+    /* background-color: rgb(255, 166, 0); */
+    background-color: rgba(16, 185, 129);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  /* .languageColor {
+    color: rgba(16, 185, 129);
+  } */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.2s;
+    transition: 0.3s;
+  }
+  input:checked + .slider {
+    background-color: rgba(245, 158, 11);
+    /* background-color: #2196f3; */
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  /* switch input:checked + .languageColor {
+    color: rgba(245, 158, 11);
+  } */
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* Spinner */
+  .loader {
+    border: 6px solid #f3f3f3;
+    /* Light grey */
+    border-top: 6px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  .loaderSmaller {
+    border: 3px solid #f3f3f3;
+    /* Light grey */
+    border-top: 3px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .page-link {
+    @apply rounded-full px-4 py-2 cursor-pointer;
+  }
+}
+
+.blink_me {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: myfirst 5s infinite;
+  animation-direction: horizontal;
+}
+
+@keyframes myfirst {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 50px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.indent {
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.indent2 {
+  padding-left: 1.3em;
+  text-indent: -1.5em;
+}
+.Roboto {
+  font-family: "Roboto";
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url("/identity/sign-in/g-normal.png") transparent 5px 50%
+    no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: "Roboto", sans-serif;
+}
+
+.googleButtonColor {
+  background-color: #4285f4;
+  border: 2px solid #4285f4;
+}
+.reference {
+  margin-top: 30px;
+}
+.referenceItem a {
+  color: rgba(59, 130, 246);
+}
+.referenceItem:hover {
+  text-decoration: underline;
+}
