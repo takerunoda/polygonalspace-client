@@ -1,0 +1,10 @@
+.layout {
+  color: #3e3e3e;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 500px) {
+  .layout {
+    color: #3e3e3e;
+  }
+}
