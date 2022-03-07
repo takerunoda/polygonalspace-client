@@ -19,9 +19,8 @@ interface ComponentProps {
 }
 
 export const BookmarkItem = ({ item, last } : ComponentProps) => {
-    const myBookmarkContext = useMyBookmarkContext()
     const { handleOnclickDeleteBookmarkFn }  = useFunctionsContext()
-    const { elementRef, currentPageGeneral, hasMoreGeneral, isVisibleGeneral, isVisibleGeneralInitial } = myBookmarkContext
+    const { elementRef, currentPageGeneral, hasMoreGeneral, isVisibleGeneral, isVisibleGeneralInitial } = useMyBookmarkContext()
     const handlePosition = () => handleScrollPosition({path: "myBookmarkScroll"})
 
     return (

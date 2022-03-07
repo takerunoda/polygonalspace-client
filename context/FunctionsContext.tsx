@@ -67,11 +67,6 @@ type FunctionsContextType = {
 const FunctionsContext = createContext<FunctionsContextType | undefined>(undefined)
 
 export function FunctionsWrapper({ children } : ChildrenProps ) {
-  
-  
-  
-  
-
   const { setUserBookmark, 
           myBookmarkAddItem, 
           setUserBookmarkIds, 
